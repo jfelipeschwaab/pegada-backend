@@ -9,11 +9,11 @@ import missionTouristicPointsRoute from '../routes/missionTouristicPoints.route.
 
 const router = express.Router();
 
-// router.use('/store', storeRoute);
-// router.use('/mission', missionRoute);
-// router.use('/cupon', cuponRoute);
-// router.use('/cuponRedeemed', cuponRedeemedRoute);  
-// router.use('/touristicPoints', touristicPointsRoute);
-// router.use('/missionTouristicPoints', missionTouristicPointsRoute);
+router.use('/store', storeRoute);
+router.use('/mission', missionRoute);
+router.use('/cupon', cuponRoute);
+router.use('/cuponRedeemed', cuponRedeemedRoute);  
+router.use('/touristicPoints', touristicPointsRoute);
+router.use('/missionTouristicPoints', missionTouristicPointsRoute);
 
 export default router;
