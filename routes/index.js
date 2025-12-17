@@ -6,6 +6,7 @@ import cuponRoute from '../routes/cupon.route.js';
 import cuponRedeemedRoute from '../routes/cuponRedeemed.route.js';
 import touristicPointsRoute from '../routes/touristicPoints.route.js';
 import missionTouristicPointsRoute from '../routes/missionTouristicPoints.route.js';
+import userRoute from '../routes/user.route.js';
 
 const router = express.Router();
 
@@ -15,5 +16,6 @@ router.use('/cupon', cuponRoute);
 router.use('/cuponRedeemed', cuponRedeemedRoute);  
 router.use('/touristicPoints', touristicPointsRoute);
 router.use('/missionTouristicPoints', missionTouristicPointsRoute);
+router.use('/user', userRoute);
 
 export default router;
