@@ -56,7 +56,11 @@ export async function redeemCupon(user_id, cupom_id) {
     }
 
     if (data.length > 0) {
-      throw new Error('Cupom já resgatado por este usuário');
+      return {
+        status: 400,
+        success: false,
+        message: 'Cupom já resgatado por este usuário'
+      };
     }
 
     console.log(data, error);
