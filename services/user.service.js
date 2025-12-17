@@ -61,6 +61,7 @@ export async function updateUserName(userId, newName) {
             .select(`
                 id,
                 name,
+                email,
                 totalPoints,
                 currentPoints,
                 totalSafeCarbon
