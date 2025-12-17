@@ -7,10 +7,10 @@ export async function listUsersRanking() {
             .select(`
                 id,
                 name,
-                totalPoints
+                totalSafeCarbon
             `)
             .eq('isActive', true)
-            .order('totalPoints', { ascending: false })
+            .order('totalSafeCarbon', { ascending: false })
 
         if (error) {
             throw new Error(`Erro ao buscar ranking: ${error.message}`)
