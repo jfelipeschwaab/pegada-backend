@@ -7,7 +7,8 @@ export async function listUsersRanking() {
             .select(`
                 id,
                 name,
-                totalSafeCarbon
+                totalSafeCarbon,
+                img_url
             `)
             .eq('isActive', true)
             .order('totalSafeCarbon', { ascending: false })
